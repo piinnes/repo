@@ -1,0 +1,36 @@
+#title{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100%
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left{
+    background-color: aliceblue;
+    flex: 1;
+}
+
+#right{
+    flex: 2;
+    background-color: yellow;
+}
+
+#right p{
+    width: 60%;;
+
+}
+#copyright{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#right img{
+    position:relative;
+    left: 23%;
+}
