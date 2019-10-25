@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper li {
+            list-style-type: none;
+            line-height: 30px;
+            width: 20%;
+            background-color: #DCDCDC;
+            padding: 10px;
+        }
+
+        #wrapper li:hover {
+            background-color: indianred;
+        }
+
+        #forbid {
+            cursor: no-drop;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+        }
+
+        #horizontal li {
+            float: left;
+            padding: 10px;
+            text-align: center;
+            width: 100px;
+        }
+        #horizontal li:hover{
+            background-color: indianred;
+        }
+
+        #horizontal ul {
+    
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        #horizontal a{
+            display: block;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+        }
+        #horizontal #forbid a{
+            cursor: no-drop;
+        }
+    </style>
+</head>
+
+<body style="margin: 10px;">
+    <h2>垂直导航练习</h2>
+    <div id="wrapper">
+        <ul id="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="new.html">新闻</a></li>
+            <li><a href="new2.html">练习</a></li>
+            <li id="forbid">关于</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+        <h2>深色水平导航练习</h2>
+    <div id="horizontal">
+        <ul id="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="new.html">新闻</a></li>
+            <li><a href="new2.html">练习</a></li>
+            <li id="forbid"><a href="#">关于</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
