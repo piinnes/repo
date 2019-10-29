@@ -67,7 +67,7 @@ hr {
 }
 
 .movie {
-    width: 206px;
+    width: 221px;
     height: 330px;
     float: left;
     border: 2px solid rgb(246, 205, 200);
@@ -85,10 +85,11 @@ hr {
 .content-footer{
     margin-left: 10%;
     overflow: hidden;
+    margin-right: 10%;
 }
 
 #other {
-    margin-left: 3%;
+    margin-left: 2%;
 }
 .movie img:hover{
     opacity: 0.7;
