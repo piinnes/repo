@@ -1,26 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>实训首页</title>
-    <style>
-        a {
-            text-align: center;
-            display: block 
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="icon" href="img/icon.png" type="imag/x-icon">
+    <title>首页</title>
 </head>
+
 <body>
-    <h1 style="text-align: center;">实训</h1>
-    <h2 style="text-align: center;">2019-10-21</h2>
-    <a href="a.html">goto a page</a><br/>
-    <a href="b.html">goto b page</a><br>
-    <a href="new.html">goto new page</a><br>
-    <a href="new2.html">goto new2 page</a><br>
-    <a href="coffee-div.html">goto coffee-div page</a><br>
-    <a href="portfolio.html">goto portfolio page</a><br>
-    <a href="danmu.html">goto danmu page</a><br>
+    <div class="header">
+        <div class="logo">
+            <h2>
+                <img src="img/movie.png">片吧
+            </h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="new.html">新闻</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="danmu.html">弹幕墙</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <ul class="imglist">
+            <img src="http://216242.ichengyun.net/tjuploadimg/201991923551627757.jpg">
+            <img src="http://216242.ichengyun.net/tjuploadimg/20199191036478297.jpg">
+            <img src="http://216242.ichengyun.net/tjuploadimg/20191010185421636.jpg">
+        </ul>
+        <div class="button">
+            <span class="on" index="0"></span>
+            <span index="1"></span>
+            <span index="2"></span>
+        </div>
+        <a href="#" class="banner_left arrow">&lt;</a>
+        <a href="#" class="banner_right arrow">&gt;</a>
+    </div>
+    <div class="content">
+        <h2>服务范围</h2>
+        <div class="service">
+            <div class="ser"><img src="img/movie.png">
+                <p>电影</p>
+            </div>
+            <div class="ser"><img src="img/movie.png">
+                <p>论坛</p>
+            </div>
+            <div class="ser"><img src="img/movie.png">
+                <p>评论</p>
+            </div>
+            <div class="ser"><img src="img/movie.png">
+                <p>查询</p>
+            </div>
+            <div class="clean"></div>
+        </div>
+        <div class="hot">
+            <h2>热门电视剧</h2>
+            <div class="lef">
+                <img src="http://216242.ichengyun.net/uploadimg2019/2019101422565955227.jpg">
+                <div class="ht">
+                    <h3>解决师粤语</h3>
+                    <p>主要剧情：讲述曾跟随黑帮的少年Karson（王浩信 饰）辗转成为体育老师Orson，遇上真实身份是黑帮千金的音乐老师Jovy（唐诗咏 饰），被后父虐打至死，他手执利连”，成为“解决师”。 K在一次任务中以假死逃离澳洲，辗转到香港，改名O。O希望展开第二人生，能在纯洁无暇的校园中过简单快乐的日子，却遇上真实身份为黑道千金的音乐女教师Jovy（唐诗咏饰）。Jovy父亲金盆洗手，正值动荡之秋，Jovy屡陷危险，O为了保护Jovy，再与黑帮中人打上交道。同时，O结识了O记高级督察Man Sir（张颕康饰），未料到这位正大光明的警察最终走上黑警之路。到底谁是黑？谁是白？O与Man Sir最终的双雄对决，又是谁解决了谁？</p>
+                    <div class="hb">
+                        <hr>
+                        <p>电视剧 / 爱情 / 剧情 / 悬疑</p>
+                        <p>香港 / 粤语</p>
+                        <p>王浩信 / 唐诗咏 / 陈敏之 / 张颕康 / 张曦雯 / 李天翔 / 冯盈盈 / 张文慈 / 李国麟 / 苗可秀 / 罗乐林 / 文雪儿 / 庄思敏</p>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </div>
+            <div class="rig">
+                <img src="http://216242.ichengyun.net/uploadimg2019/20199162259615374.jpg">
+                <div class="ht">
+                    <h3>金宵大厦粤语</h3>
+                    <p>奇幻悬疑周播剧《金宵大厦》，由叶镇辉执导，编剧罗佩清。陈山聪、李施婵领衔主演。故事以前世今生为背景，剧中涉及梦、寓言、自然力量、曼德拉效应、UFO等议题。讲述了机缘巧合下金宵大厦保安阿萧和冷艳美丽空姐Alex一起破解奇幻悬疑的故事。</p>
+                    <div class="hb">
+                        <hr>
+                        <p>电视剧</p>
+                        <p>香港 / 粤语</p>
+                        <p>陈山聪 / 李施嬅 / 张曦雯 / 谭凯琪 / 林子善 / 黄祥兴 / 邓佩仪 / 高海宁 / 陆永 / 张彦博 / 马贯东 / 郑耀轩 / 黄子雄 / 赵希洛 / 欧阳巧</p>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </div>
+            <div class="lef">
+                <img src="http://216242.ichengyun.net/uploadimg2019/20191010182826448.jpg">
+                <div class="ht">
+                    <h3>行尸走肉第十季</h3>
+                    <p>镇治安官瑞克·格里姆斯（Andrew Lincoln 饰）在一次行动中遭受枪击，当他从昏迷中醒来时，发现小镇上阴气沉沉，死尸遍地。更为恐怖的是，有的死尸游走于街头巷尾，嗜血如命，早已化作恐怖的丧尸。从一对幸存的父子口中得知，大批的幸存者早已疏散到亚特兰大市的避难所。为了 找到失踪的妻儿，瑞克只身上路。然而亚特兰大早已沦陷成为死城，丧尸在此占有绝对的统治地位。被丧尸围攻的瑞克得到数名幸存者的救助，经过一番奋力厮杀，他们最终返回到野外的营地。在接下来的日子里，他们不仅要面临丧尸的威胁，更要承受来自灵魂深处的巨大考验……</p>
+                    <div class="hb">
+                        <hr>
+                        <p>电视剧 / 剧情 / 恐怖 / 惊悚</p>
+                        <p>美国 / 英语</p>
+                        <p>诺曼·瑞杜斯 / 丹娜·奎里拉 / 梅丽莎·麦克布莱德 / 乔什·麦克德米特 / 克里斯蒂·瑟拉图斯 / 塞斯·吉列姆 / 罗斯·马昆德 / 卡里·佩顿</p>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </div>
+        </div>
+        <ul class="newslist">
+            <h2>新闻动态</h2>
+            <div class="clean"></div>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="fnav">
+            <div class="footer_top">
+                <div class="ft">
+                    <img src="img/addr.png">
+                    <p>闽江学院</p>
+                </div>
+                <div class="ft">
+                    <img src="img/email.png">
+                    <p>1111111@qq.com</p>
+                </div>
+                <div class="ft">
+                    <img src="img/contact.png">
+                    <p>1231111111</p>
+                </div>
+                <div class="ft">
+                    <img class="er" src="img/erweima.jpg">
+                    <p>扫一扫</p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <hr>
+                <p>版权所有&copy;piinnes</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
 </body>
+
 </html>
